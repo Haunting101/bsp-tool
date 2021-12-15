@@ -7,4 +7,5 @@ edition = "2021"
 
 [dependencies]
 clap = "2.34.0"
+image = "0.23.14"
 spooky_bsp = { git = "https://github.com/Haunting101/spooky_bsp" }
