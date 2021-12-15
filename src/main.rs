@@ -29,17 +29,13 @@ fn main() {
                         .long("texture-format")
                         .takes_value(true)
                         .default_value("png")
-                        .possible_values(&["png", "jpg"]),
+                        .possible_values(&["png", "jpg", "tiff", "bmp"]),
                 ),
         )
         .subcommand(
             SubCommand::with_name("verify")
                 .about("Verifies if a BSP file isn't corrupted")
-                .arg(
-                    Arg::with_name("input")
-                        .required(true)
-                        .takes_value(true),
-                ),
+                .arg(Arg::with_name("input").required(true).takes_value(true)),
         )
         .get_matches();
 
