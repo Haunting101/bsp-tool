@@ -37,7 +37,6 @@ fn main() {
                 .about("Verifies if a BSP file isn't corrupted")
                 .arg(
                     Arg::with_name("input")
-                        .short("i")
                         .required(true)
                         .takes_value(true),
                 ),
